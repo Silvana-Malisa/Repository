@@ -1,0 +1,45 @@
+body: Center(
+          //widgets center
+          //widgets hijo x eso se le pone child y el widgets
+          //propiedad child ... wigdet hijo
+          child: Text("contenido"),
+        )
+
+
+----------------------------------------------------------------------------
+ESTE CODIGO ES PARA UNA SOLA IMAGEN
+body: Container(
+          padding:
+              EdgeInsets.all(50.0), //esto es para darle un borde ala imagen
+          child: Image.network(
+              "https://1.bp.blogspot.com/-wJS6GT7Uz2s/YQYnWSf2XfI/AAAAAAAAChY/PFXWUDU2ZHQ1V70zRMfQl6bRX33pOEJcACLcBGAsYHQ/s1280/Uso_de_dispositivos_m%25C3%25B3viles_en_la_educaci%25C3%25B3n_jorgeinnova.jpg"),
+        )
+------------------------------------------
+un widget column agregar una imagen, txt hacia abajo mientras sigue aumentando puede no visualizar las imagenes 
+por lo tanto usamos viwelist
+
+body: ListView(
+          //CHILDREN ES PARA AGREGAR VARIOS HIJOS
+          children: <Widget>[
+            Container(
+              padding:
+                  EdgeInsets.all(50.0), //esto es para darle un borde ala imagen
+              child: Image.network(
+                  "https://1.bp.blogspot.com/-wJS6GT7Uz2s/YQYnWSf2XfI/AAAAAAAAChY/PFXWUDU2ZHQ1V70zRMfQl6bRX33pOEJcACLcBGAsYHQ/s1280/Uso_de_dispositivos_m%25C3%25B3viles_en_la_educaci%25C3%25B3n_jorgeinnova.jpg"),
+            ),
+            Container(
+              padding:
+                  EdgeInsets.all(50.0), //esto es para darle un borde ala imagen
+              child: Image.network(
+                  "https://1.bp.blogspot.com/-wJS6GT7Uz2s/YQYnWSf2XfI/AAAAAAAAChY/PFXWUDU2ZHQ1V70zRMfQl6bRX33pOEJcACLcBGAsYHQ/s1280/Uso_de_dispositivos_m%25C3%25B3viles_en_la_educaci%25C3%25B3n_jorgeinnova.jpg"),
+            ),
+            Container(
+              padding:
+                  EdgeInsets.all(50.0), //esto es para darle un borde ala imagen
+              child: Image.network(
+                  "https://1.bp.blogspot.com/-wJS6GT7Uz2s/YQYnWSf2XfI/AAAAAAAAChY/PFXWUDU2ZHQ1V70zRMfQl6bRX33pOEJcACLcBGAsYHQ/s1280/Uso_de_dispositivos_m%25C3%25B3viles_en_la_educaci%25C3%25B3n_jorgeinnova.jpg"),
+            ),
+          ],
+        )
+
+-------------------------------------------------------------------------------
